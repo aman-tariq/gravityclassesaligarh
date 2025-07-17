@@ -1187,7 +1187,7 @@ section h1 {
         .company-info h2 {
             font-size: 1.5em;
             margin-bottom: 20px;
-            color: rebeccapurple;
+            color: #250a3f;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -1295,7 +1295,7 @@ section h1 {
         .contact-container h1 {
             font-size: 2em;
             margin-bottom: 20px;
-            color: rebeccapurple; /* High contrast for visibility */
+            color: #250a3f; /* High contrast for visibility */
             font-weight: 700;
         }
 
