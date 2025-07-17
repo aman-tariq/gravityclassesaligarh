@@ -126,3 +126,19 @@ document.addEventListener("DOMContentLoaded", function () {
   }, 4000);
 });
 
+// JavaScript to trigger animations on scroll
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.querySelectorAll('.animate').forEach(el => {
+                            el.classList.add('animate');
+                        });
+                        entry.target.querySelector('.contact-left').classList.add('slide-in-left');
+                        entry.target.querySelector('.contact-right').classList.add('slide-in-right');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            observer.observe(document.querySelector('#contact'));
+        });
